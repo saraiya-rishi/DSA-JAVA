@@ -1,13 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.mca;
 
-/**
- *
- * @author saraiya rishi
- */
 public class Circular_Queue {
+    int cq[];
+    int front ,rear;
+    int size;
+
+    public Circular_Queue(int size) {
+        this.cq = new int[size];
+        this.front = -1;
+        this.rear = -1;
+        this.size = size;
+    }
     
+    boolean isFull()
+    {
+        return front == (rear + 1) % size;
+    }
+    
+    boolean isEmpty()
+    {
+        return (front == -1 && rear == -1) || (front == rear);
+    }
 }
