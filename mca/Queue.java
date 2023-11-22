@@ -16,7 +16,7 @@ public class Queue {
     }
 
     boolean isEmpty() {
-        return front == -1;
+        return rear == -1;
     }
 
     boolean isFull() {
@@ -33,12 +33,40 @@ public class Queue {
         {
             front = rear = 0;
             q[rear] = value;
+            display();
         }
         else
         {
             rear++;
             q[rear] = value;
+            display();
         }
+    }
+    
+    void deQueue()
+    {
+        if(isEmpty())
+        {
+            System.out.println("Queue is Empty...");
+        }
+        else
+        {
+            front++;
+            display();
+        }
+    }
+    
+    int peek()
+    {
+        if(isEmpty())
+        {
+            System.out.println("Queue is Empty...");
+        }
+        else
+        {
+            return q[front];
+        }
+        return 0;
     }
     
     void display()
@@ -86,9 +114,11 @@ public class Queue {
                     break;
                     
                 case 2:
+                    q.deQueue();
                     break;
                     
                 case 3:
+                    System.out.println(q.peek());
                     break;
                     
                 case 4:
