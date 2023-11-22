@@ -107,7 +107,7 @@ public class Queue {
             
             switch (choice) {
                 case 1:
-                    System.out.println("Enter Value:- ");
+                    System.out.print("Enter Value:- ");
                     int value = sc.nextInt();
                     
                     q.enQueue(value);
