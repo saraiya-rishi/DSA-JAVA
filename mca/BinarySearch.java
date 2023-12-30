@@ -20,9 +20,6 @@ public class BinarySearch {
             arr[i] = sc.nextInt();
         }
         
-        
-        
-        
         for(int i = 0 ; i<n ;i++)
         {
             for(int j = i+1 ;j<n;j++)
