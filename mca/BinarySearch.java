@@ -24,7 +24,7 @@ public class BinarySearch {
         {
             for(int j = i+1 ;j<n;j++)
             {
-                if(arr[i]>arr[j])
+                if(arr[i]>arr[j]) 
                 {
                     int a;
                     
