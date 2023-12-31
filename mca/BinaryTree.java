@@ -125,10 +125,5 @@ public class BinaryTree {
             }
             
         }while(ch != 5);
-        
-         
-        
-
-      
     }
 }
